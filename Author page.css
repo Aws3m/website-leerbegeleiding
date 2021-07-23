@@ -1,0 +1,19 @@
+body{
+    width: 100%;
+}
+figure{
+    width: 100px;
+}
+nav{
+    display: flex;
+    align-content: center;
+    width: 90%;
+}
+ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100px;
+    text-align: center;
+}
