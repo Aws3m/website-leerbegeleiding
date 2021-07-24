@@ -1,19 +1,41 @@
-body{
-    width: 100%;
+
+header{
+    background-image: url("pocket-watch-1637396_1920.jpg");
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
 }
-figure{
-    width: 100px;
+#logo{
+    position: relative;
 }
 nav{
-    display: flex;
-    align-content: center;
-    width: 90%;
+    width: 160px;
+    position: fixed;
+    left:0;
+    top: 100px;
+    bottom: 0;
+    background: darkslateblue;
+    overflow-x: hidden;
 }
-ul li{
-    display: inline-block;
+nav ul{
+    padding-left: 0;
+    margin: 0;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    border-bottom: solid black 2px;
     text-decoration: none;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 100px;
+    font-size: 25px;
+    color: lightgoldenrodyellow;
     text-align: center;
+    padding: 25px 8px 25px 8px;
+}
+
+nav ul li:hover{
+    background: cadetblue;
 }
