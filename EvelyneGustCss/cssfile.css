@@ -1,21 +1,18 @@
-
+body{
+    margin: 0;
+}
 header{
-    background-image: url("pocket-watch-1637396_1920.jpg");
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
+    background-image: url("../pocket-watch-1637396_1920.jpg");
     height: 100px;
 }
 #logo{
     position: relative;
 }
 nav{
-    width: 160px;
-    position: fixed;
+    width: 11.2%;
+    position: sticky;
     left:0;
     top: 100px;
-    bottom: 0;
     background: darkslateblue;
     overflow-x: hidden;
 }
@@ -38,4 +35,13 @@ nav ul li a{
 
 nav ul li:hover{
     background: cadetblue;
+}
+
+p{
+    width: 90%;
+    margin-left: 1%;
+}
+
+#main-content{
+    display: flex;
 }
