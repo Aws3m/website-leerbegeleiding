@@ -1,10 +1,7 @@
 body{
     margin: 0;
 }
-header{
-    background-image: url("../pocket-watch-1637396_1920.jpg");
-    height: 100px;
-}
+
 #logo{
     position: relative;
 }
@@ -27,6 +24,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    color: aliceblue;
 }
 a{
     text-decoration: none;
