@@ -1,0 +1,41 @@
+
+    body{
+        margin: 0;
+        display: flex;
+    }
+    img{
+        height: 100vh
+    }
+    .tekst{
+        background-color: #213956;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item{
+        width: 50%;
+    }
+    h1,h2, h3{
+        color: antiquewhite;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 3%;
+    }
+
+    .navlink{
+        cursor: pointer;
+        border: 2px solid antiquewhite ;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .navlink:hover{
+        color:#1eaad4;
+        border-color: #1eaad4;
+    }
