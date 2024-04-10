@@ -1,10 +1,22 @@
 
     body{
         margin: 0;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+    #headofsite{
         display: flex;
+        -webkit-box-shadow: -1px 6px 18px -8px rgba(0,0,0,1);
+-moz-box-shadow: -1px 6px 18px -8px rgba(0,0,0,1);
+box-shadow: -1px 6px 18px -8px rgba(0,0,0,1);
     }
     img{
         height: 100vh
+    }
+    a{
+        text-decoration: none;
     }
     .tekst{
         background-color: #213956;
@@ -17,7 +29,7 @@
     .item{
         width: 50%;
     }
-    h1,h2, h3{
+    .headofsite{
         color: antiquewhite;
     }
 
@@ -38,4 +50,81 @@
     .navlink:hover{
         color:#1eaad4;
         border-color: #1eaad4;
+    }
+
+    #overons{
+        padding: 1rem;
+        display: flex;
+        gap: 2rem;
+    }
+
+    #overons div{
+        width: 50%;
+    }
+    #overons p{
+        font-size: 2rem;
+    }
+    #profilepicsection{
+        display: flex;
+        justify-content: center;
+    }
+    .profile1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .profilepic{
+        height: auto;
+        width: 30rem;
+    }
+
+    cite{
+        font-size: 3rem;
+    }
+    #tarieven{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .sessieblok{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .sessies{
+        display: flex;
+        justify-content: center;
+        width: 25%;
+        padding: 50px;
+        color: antiquewhite;
+        border: 2px solid #c6ccd3;
+        background-color: #213956;
+        border-radius: 10px;
+        height: 300px;
+    }
+    
+    .tab{
+        margin-left: 20rem;
+        text-decoration: underline;
+    }
+    
+    .standaardtarieftext{
+        text-decoration: underline;
+        font-size: 1rem;
+    }
+    #contact{
+        padding: 1rem;
+    }
+    .contactformulier{
+        border: 2px solid #c6ccd3;
+        background-color: #213956;
+        padding: 20px;
+        width: 50%;
+        border-radius: 10px;
+        color: antiquewhite;
     }
