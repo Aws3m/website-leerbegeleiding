@@ -1,0 +1,33 @@
+#footer{
+	background: rgba(65, 62, 62, 0.5);
+	backdrop-filter: blur(var(--blur));
+	-webkit-backdrop-filter: blur(var(--blur));
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.copyrightfooter{
+	color: antiquewhite;
+	display: flex;
+	flex-direction: column; 
+	width: fit-content;
+}
+
+#facebook, #instagram, #linkedin, #github{
+	color: antiquewhite;
+	transition: .2s;
+	cursor: pointer;
+}
+#facebook:hover, #instagram:hover, #linkedin:hover, #github:hover{
+	transform: scale(1.1);
+}
+
+.socials{
+	display: flex;
+	gap: 10px;
+}
+
+
+
+
+
