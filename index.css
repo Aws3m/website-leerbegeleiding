@@ -1,125 +1,16 @@
 
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  .poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-    a{
-        text-decoration: none;
-        color: black;
-    }
-    
+
     body{
         margin: 0;
+    }
+    .maincontent{
         position: relative;
     }
-
     .arrowup{
-        position: fixed;
+        position: absolute;
         bottom: 50px;
-        right: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .circle{
@@ -142,12 +33,7 @@
         border-right: 2px solid black;
         transform: rotate(-45deg);
     }
-    html{
-        scroll-behavior: smooth;
-    }
-    a{
-        text-decoration: none;
-    }
+    
     .headofsite{
         color: aliceblue;
     }
@@ -163,7 +49,7 @@
         height: 100vh
     }
     .tekst{
-        background-color: #213956;
+        background-color: #6b4a2b;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -178,7 +64,7 @@
     
 
     #overons{
-        padding: 1rem;
+        padding: 3rem;
         display: flex;
         gap: 2rem;
     }
@@ -213,24 +99,56 @@
         flex-direction: column;
         justify-content: space-around;
         gap: 2rem;
-        padding: 1rem;
+        padding: 3rem;
     }
 
     .sessieblok{
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 2rem;
     }
     .sessies{
         display: flex;
         justify-content: center;
-        width: 25%;
-        padding: 50px;
-        color: antiquewhite;
+        align-items: center;
+        gap: 150px;
+        width: 100%;
+    }
+    .sessie{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px;
+        color: rgb(34, 18, 128);
         border: 2px solid #c6ccd3;
-        background-color: #213956;
         border-radius: 10px;
-        height: 300px;
+        height: fit-content;
+
+    }
+
+    .aanbodtegels{
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .aanbodtegeltitel{
+        width: 100%;
+        padding: 10px;
+        height: fit-content;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
     }
     
     .tab{
@@ -245,7 +163,11 @@
         width: 100%;
     }
     #contact{
-        padding: 1rem;
+        padding: 3rem;
+    }
+    .contactsection{
+        display: flex;
+        gap: 50px;
     }
     .contactformulier{
         border: 2px solid #c6ccd3;
@@ -255,8 +177,13 @@
         border-radius: 10px;
         color: antiquewhite;
     }
+    .contactinfo{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
     #blogs{
-        padding: 1rem;
+        padding: 3rem;
         height: fit-content;
         overflow-x: auto;
     }
@@ -314,4 +241,25 @@
     .name-profession{
         display: flex;
         flex-direction: column;
+    }
+    .contactsection{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contactinfo{
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoitem{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: fit-content;
+        font-size: 1em;
+    }
+
+    .icon{
+        height: 30px;
+        width: 30px;
     }

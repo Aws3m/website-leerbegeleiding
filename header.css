@@ -1,29 +1,30 @@
 header{
     display: flex;
     justify-content: space-between;
-    width: 100%;
     gap: 3%;
-    position: sticky;
-    top: 0;
     /* From https://css.glass */
-background: rgba(255, 255, 255, 0.5);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(182, 185, 152, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    align-items: center;
+    z-index: 1;
 }
 nav{
     display: flex;
-    justify-content: flex-end;
-    width: fit-content;
+    justify-content: space-between;
+    width: 20%;
     gap: 3%;
-    padding: 10px;
+    height: fit-content;
+    padding: 5px;
 }
 
 .navlink{
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
     width: fit-content;
+    height: fit-content;
     text-wrap: nowrap;
     border-bottom: 2px solid transparent;
     transition: .5s;
