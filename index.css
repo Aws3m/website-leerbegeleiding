@@ -8,7 +8,7 @@
     }
     .arrowup{
         position: absolute;
-        bottom: 50px;
+        bottom: 15px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -16,7 +16,7 @@
     .circle{
         height: 70px;
         width: 70px;
-        background-color: rgb(247, 243, 243);
+        background-color: rgb(85, 116, 49);
         border: 5px solid rgb(247, 243, 243);
         border-radius: 50%;
         box-shadow: 1px 5px 20px grey;
@@ -49,7 +49,7 @@
         height: 100vh
     }
     .tekst{
-        background-color: #6b4a2b;
+        background-color: rgb(85, 116, 49);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -73,7 +73,7 @@
         width: 50%;
     }
     #overons p{
-        font-size: 2rem;
+        font-size: 1em;
     }
     #profilepicsection{
         display: flex;
@@ -143,6 +143,7 @@
         position: absolute;
         bottom: 0;
         text-align: center;
+        border-radius: 10px;
         /* From https://css.glass */
 background: rgba(255, 255, 255, 0.2);
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -164,19 +165,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     }
     #contact{
         padding: 3rem;
+        
     }
-    .contactsection{
-        display: flex;
-        gap: 50px;
-    }
-    .contactformulier{
-        border: 2px solid #c6ccd3;
-        background-color: #213956;
-        padding: 20px;
-        width: 50%;
-        border-radius: 10px;
-        color: antiquewhite;
-    }
+    
+    
     .contactinfo{
         display: flex;
         flex-direction: column;
@@ -242,15 +234,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         display: flex;
         flex-direction: column;
     }
-    .contactsection{
-        display: flex;
-        justify-content: space-between;
-    }
-    .contactinfo{
-        width: fit-content;
-        justify-content: center;
-        align-items: center;
-    }
+    
     .infoitem{
         display: flex;
         align-items: center;

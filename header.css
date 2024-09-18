@@ -3,7 +3,7 @@ header{
     justify-content: space-between;
     gap: 3%;
     /* From https://css.glass */
-    background: rgba(182, 185, 152, 0.5);
+    background: rgba(85, 116, 49, 0.5);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
