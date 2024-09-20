@@ -5,61 +5,54 @@
     }
     .maincontent{
         position: relative;
-    }
-    .arrowup{
-        position: absolute;
-        bottom: 15px;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        
     }
 
     .circle{
         height: 70px;
         width: 70px;
-        background-color: rgb(85, 116, 49);
-        border: 5px solid rgb(247, 243, 243);
-        border-radius: 50%;
-        box-shadow: 1px 5px 20px grey;
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: .5s;
+    }
+    .circle:hover{
+        transform: translateY(-10px);
     }
 
     .arrow{
         height: 20px;
         width: 20px;
         margin-top: 10px;
-        border-top: 2px solid black;
-        border-right: 2px solid black;
+        border-top: 2px solid rgb(62, 67, 90);;
+        border-right: 2px solid rgb(62, 67, 90);;
         transform: rotate(-45deg);
     }
     
     .headofsite{
         color: aliceblue;
+        
     }
     #headofsite{
         display: flex;
-        
+        flex-direction: column;
+        background-color: rgb(136, 141, 116);
     }
     #small-logo{
         width: 70px;
         height: auto;
     }
-    #big-logo{
-        height: 100vh
-    }
     .tekst{
-        background-color: rgb(85, 116, 49);
+        
         display: flex;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
+        height: 500px;
     }
 
-    .item{
-        width: 50%;
-    }
     
     
 
@@ -88,11 +81,11 @@
     }
     .profilepic{
         height: auto;
-        width: 30rem;
+        width: 100%;
     }
 
     cite{
-        font-size: 3rem;
+        font-size: 2em;
     }
     #tarieven{
         display: flex;
@@ -113,6 +106,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         gap: 150px;
         width: 100%;
     }
@@ -122,7 +116,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: fit-content;
         padding: 5px;
         color: rgb(34, 18, 128);
         border: 2px solid #c6ccd3;
@@ -163,17 +157,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         justify-content: space-between;
         width: 100%;
     }
-    #contact{
-        padding: 3rem;
-        
-    }
     
     
-    .contactinfo{
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
     #blogs{
         padding: 3rem;
         height: fit-content;
