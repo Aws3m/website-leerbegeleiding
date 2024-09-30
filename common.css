@@ -1,4 +1,11 @@
-
+:root{
+  --darkest-eucalyptus: rgb(122, 138, 112);
+  --dark-eucalyptus: rgb(126, 149, 129);
+  --eucalyptus: rgb(171, 179, 144);
+  --light-eucalyptus: rgb(171, 193, 178);
+  --beige: rgb(249, 234, 215);
+  --white: rgb(250, 248, 236);
+}
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -108,6 +115,10 @@
   }
   html{
     scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
 }
 a{
     text-decoration: none;
