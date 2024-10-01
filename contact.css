@@ -1,3 +1,66 @@
+.contactdescription{
+    display: flex;
+    justify-content: center;
+
+}
+
+.description{
+    width: 80%;
+    line-height: 50px;
+    font-size: 2em;;
+}
+
+.contactitem{
+    display: flex;
+    gap: 10px;
+    color: var(--light-eucalyptus);
+    font-size: 1.5em;
+}
+.iconcontact{
+    height: 40px;
+	width: 40px;
+}
+.contactheader{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    font-size: 2em;
+    color: var(--dark-eucalyptus);
+    border-bottom: 3px solid var(--beige);
+}
+
+.formulier{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 2%;
+    width: 100%;
+}
 form{
-    width: 50%;
+    border-radius: 2%;
+    padding: 2%;
+    width: 600px;
+    background-color: var(--beige);
+}
+label{
+    color: var(--light-eucalyptus);
+}
+#exampleInputEmail1::placeholder{
+    color: rgb(204, 195, 195);
+}
+.submitbutton{
+    color:var(--dark-eucalyptus);
+    padding: 10px;
+    border: 1px solid var(--dark-eucalyptus);
+    border-radius: 5px;
+    background-color: var(--white);
+    transition: .2s;
+}
+.submitbutton:hover{
+    color:var(--white);
+    background-color: var(--light-eucalyptus);
+}
+
+#textarea{
+    min-height: 300px;
 }
