@@ -14,8 +14,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script defer src="./getCurrentYearForCopyright.js"></script>
+    <script defer src="./mobilemenu.js"></script>
 </head>
 <body>
+    <div class="hamburgerblock">
+        <div class="hamburgermenu">
+            <div class="hamburgerlink">
+                <a href="./about.html" class=" poppins-regular">Over ons</a>
+            </div>
+            <div class="hamburgerlink">
+                <a href="./aanbod.html" class=" poppins-regular">Aanbod</a>
+            </div>
+            <div class="hamburgerlink">
+                <a href="./blogs.html" class=" poppins-regular">Blogs</a>
+            </div>
+            <div class="hamburgerlink">
+                <a href="./contact.html" class=" poppins-regular">Contact</a>
+            </div>
+        </div>
+    </div>
     <section id="headofsite">
         <header>
             <nav>
@@ -24,6 +41,16 @@
                 <a href="./blogs.html" class="navlink poppins-regular">Blogs</a>
                 <a href="./contact.html" class="navlink poppins-regular">Contact</a>
             </nav>
+            <div class="hamburger" onclick="openMenu('closed')">
+                <div class="hamitem"></div>
+                <div class="hamitem"></div>
+                <div class="hamitem"></div>
+            </div>
+            <div class="cross" onclick="openMenu('open')">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" heigth="100%" width="30" style="color: rgb(249, 234, 215);" fill="currentColor">
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                </svg>
+            </div>
         </header>
     </section>
     <div class="maincontent">

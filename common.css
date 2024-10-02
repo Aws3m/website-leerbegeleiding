@@ -5,6 +5,7 @@
   --light-eucalyptus: rgb(171, 193, 178);
   --beige: rgb(249, 234, 215);
   --white: rgb(250, 248, 236);
+  --red: rgb(212, 162, 131);
 }
 .poppins-thin {
     font-family: "Poppins", sans-serif;
@@ -118,6 +119,7 @@
 }
 
 body{
+  position: relative;
   margin: 0;
 }
 a{

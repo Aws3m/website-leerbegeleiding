@@ -85,9 +85,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .clientenportaal{
 	padding: 20px;
-	background-color: var(--beige);
+	background-color: var(--red);
 	border-radius: 10px;
-	color: var(--darkest-eucalyptus);
+	color: var(--white);
 }
 .bottomfooter{
 display: flex;
@@ -109,10 +109,23 @@ justify-content: center;
 	gap: 20px;
 } */
 @media only screen and (max-width: 770px) {
+	.contactsection{
+		flex-direction: column;
+		gap: 50px;
+	}
+	#footer{
+		gap: 20px;
+		height: fit-content;
+	}
+	
+	.clientenportaal{
+		padding:10px;
+		font-size: 1em;
+
+	}
 	
 }
 @media only screen and (max-width: 426px) {
-	
 }
 
 

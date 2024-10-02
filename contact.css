@@ -12,7 +12,7 @@
 }
 
 .formuliertitle{
-    color: crimson;
+    color: var(--red);
 }
 
 .contactitem{
@@ -70,4 +70,29 @@ label{
 
 #textarea{
     min-height: 300px;
+}
+
+@media only screen and (max-width: 770px) {
+    .formulier{
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+    
+    form{
+       
+        width: 100%;
+       
+    }
+	.contactheader{
+        
+        font-size: 2em;
+        
+    }
+    .description{
+        font-size: 1em;
+        line-height: 30px;
+    }
+}
+@media only screen and (max-width: 426px) {
 }
