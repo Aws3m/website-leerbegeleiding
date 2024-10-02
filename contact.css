@@ -7,24 +7,31 @@
 .description{
     width: 80%;
     line-height: 50px;
-    font-size: 2em;;
+    font-size: 2em;
+    color: var(--light-eucalyptus);
+}
+
+.formuliertitle{
+    color: crimson;
 }
 
 .contactitem{
     display: flex;
+    align-content: center;
     gap: 10px;
     color: var(--light-eucalyptus);
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 .iconcontact{
-    height: 40px;
-	width: 40px;
+    margin-top: 5px;
+    height: 25px;
+	width: 25px;
 }
 .contactheader{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 50px;
-    font-size: 2em;
+    font-size: 4em;
     color: var(--dark-eucalyptus);
     border-bottom: 3px solid var(--beige);
 }
