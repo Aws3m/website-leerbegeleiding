@@ -14,79 +14,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script defer src="./getCurrentYearForCopyright.js"></script>
+    <script defer src="./mobilemenu.js"></script>
 </head>
 <body>
     
     <div class="maincontent">
         <section id="headofsite">
-            <header>
+            <header id="desktop">
                 <img src="assets/child-and-mother-hands-vector-24789417.jpg" alt="logo" id="small-logo">
-                <nav>
+                <nav class="dekstopmenu">
                     <a href="./about.html" class="navlink poppins-regular">Over ons</a>
                     <a href="./aanbod.html" class="navlink poppins-regular">Aanbod</a>
                     <a href="./blogs.html" class="navlink poppins-regular">Blogs</a>
                     <a href="./contact.html" class="navlink poppins-regular">Contact</a>
                 </nav>
             </header>
-            <div class="tekst">
-                <h1 class="headofsite poppins-bold fs-1" >Evelyne Gust</h1>
-                <h2 class="headofsite poppins-regular fs-3">Psychologische consulent</h2>
-            </div>
-        </section>
-        <section id="overons">
-            <div>
-                <p class="poppins-regular">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
-                labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-                nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-                </p>
-            </div>
-            <div id="profilepicsection">
-                <div class="profile1">
-                    <img class="profilepic" src="assets/istock_000020876176xsmall.jpg" alt="Evelyne Gust">
-                    <cite class="poppins-regular">"Hier komt een inspirerende quote"</cite>
+            <header id="mobile">
+                <img src="assets/child-and-mother-hands-vector-24789417.jpg" alt="logo" id="small-logo">
+                <div class="mobilemenuicons">
+                    <div class="hamburgerblock" onclick="openMenu('closed')">
+                        <div class="hamburger">
+                            <div class="hamitem"></div>
+                            <div class="hamitem"></div>
+                            <div class="hamitem"></div>
+                        </div>
+                    </div>
+                    <div class="cross" onclick="openMenu('open')">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" heigth="100%" width="30" style="color: rgb(249, 234, 215);" fill="currentColor">
+                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                        </svg>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="tarieven">
-            <div class="sessieblok">
-                <h1 class="poppins-bold">Aanbod</h1>
-                <div class="sessies">
-                    <a class="sessie">
-                        <div class="poppins-regular">
-                            <img src="./assets/loopbaanbegeleiding.png" alt="loopbaanbegeleiding" class="aanbodtegels">
-                        </div>
-                        <div class="poppins-medium aanbodtegeltitel">
-                            Loopbaanbegeleiding
-                        </div>
-                    </a>
-                    <a class="sessie">
-                        <div class="poppins-regular">
-                            <img src="./assets/loopbaanbegeleiding.png" alt="loopbaanbegeleiding" class="aanbodtegels">
-                        </div>
-                        <div class="poppins-medium aanbodtegeltitel">
-                            Loopbaanbegeleiding
-                        </div>
-                    </a>
-                    <a class="sessie">
-                        <div class="poppins-regular">
-                            <img src="./assets/loopbaanbegeleiding.png" alt="loopbaanbegeleiding" class="aanbodtegels">
-                        </div>
-                        <div class="poppins-medium aanbodtegeltitel">
-                            Loopbaanbegeleiding
-                        </div>
-                    </a>
+                <div class="mobilemenu">
+                    <nav class="hamburgermenu">
+                        <a href="./about.html" class="navlink poppins-regular">Over ons</a>
+                        <a href="./aanbod.html" class="navlink poppins-regular">Aanbod</a>
+                        <a href="./blogs.html" class="navlink poppins-regular">Blogs</a>
+                        <a href="./contact.html" class="navlink poppins-regular">Contact</a>
+                    </nav>
                 </div>
-            </div>
+
+            </header>
         </section>
         <section id="blogs" class="poppins-regular">
             <h1>Blogs</h1>
@@ -303,78 +271,59 @@
     </div>
     
     <footer id="footer">
-        <section id="contact" class="poppins-regular">
-            <h1 style="color: rgba(39, 18, 131, .5);">Contacteer mij</h1>
-            <div class="contactsection">
-                <div class="contactformulier">
-                    <form>
-                        <div class="form-group mb-5">
-                          <label for="voornaam">Voornaam*</label>
-                          <input type="email" class="form-control" id="voornaam" aria-describedby="voornaam" placeholder="Voornaam">
-                        </div>
-                        <div class="form-group mb-5">
-                          <label for="achternaam">Achternaam*</label>
-                          <input type="email" class="form-control" id="achternaam" aria-describedby="emailHelp" placeholder="Achternaam">
-                        </div>
-                        <div class="form-group mb-5">
-                          <label for="exampleInputEmail1">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@hotmail.com">
-                        </div>
-                        <div class="input-group mb-5 d-flex flex-column">
-                            <label for="textarea">Je vraag*</label>
-                            <textarea class="form-control w-100 rounded" id="textarea" aria-label="With textarea"></textarea>
-                          </div>
-                          <button type="submit" class="btn btn-light">Submit</button>
-                        </form>
-                    </div>
-                    <div class="info">
-                        
-                        <div class="maps">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.69004342203!2d5.293436576970558!3d50.892446855440504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c12275f57a028d%3A0xa20edb47e66e307d!2sSteenweg%2070%2C%203570%20Alken!5e0!3m2!1snl!2sbe!4v1726605522416!5m2!1snl!2sbe" id="maps" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="contactinfo">
-                            <div class="infoitem poppins-bold">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon" style="color: rgba(39, 18, 131, .5);" fill="currentColor">
-                                    <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
-                                </svg>
-                                Telefoon
-                            </div>
-                            <div class="infoitem poppins-bold">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon" style="color: rgba(39, 18, 131, .5);" fill="currentColor">
-                                    <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7 .3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2 .4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/>
-                                </svg>
-                                E-mail
-                            </div>
-                            <div class="infoitem poppins-bold">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon" style="color: rgba(39, 18, 131, .5);" fill="currentColor">
-                                    <path d="M302.8 312C334.9 271.9 408 174.6 408 120C408 53.7 354.3 0 288 0S168 53.7 168 120c0 54.6 73.1 151.9 105.2 192c7.7 9.6 22 9.6 29.6 0zM416 503l144.9-58c9.1-3.6 15.1-12.5 15.1-22.3L576 152c0-17-17.1-28.6-32.9-22.3l-116 46.4c-.5 1.2-1 2.5-1.5 3.7c-2.9 6.8-6.1 13.7-9.6 20.6L416 503zM15.1 187.3C6 191 0 199.8 0 209.6L0 480.4c0 17 17.1 28.6 32.9 22.3L160 451.8l0-251.4c-3.5-6.9-6.7-13.8-9.6-20.6c-5.6-13.2-10.4-27.4-12.8-41.5l-122.6 49zM384 255c-20.5 31.3-42.3 59.6-56.2 77c-20.5 25.6-59.1 25.6-79.6 0c-13.9-17.4-35.7-45.7-56.2-77l0 194.4 192 54.9L384 255z"/>
-                                </svg>
-                                Steenweg 70, 3570 Alken
-                            </div>
-                        </div>
-                        <div class="socials" >
-                            <a class="social" >
-                                <svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="30" height="30" style="color: rgba(39, 18, 131, .5);" fill="currentColor"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
-                            </a>
-                            <a class="social" >
-                                <svg id="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30" height="30" style="color: rgba(39, 18, 131, .5);" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                            </a>
-                            <a class="social"  href="https://www.linkedin.com/in/sem-radoes-873435196/">
-                                <svg id="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30" height="30" style="color: rgba(39, 18, 131, .5);" fill="currentColor"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                            </a>
-                        </div>
-                    </div>
+        <div class="contactsection poppins-regular">
+            <div class="contactinfo">
+                <div class="infoitem poppins-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon" style="color: rgb(249, 234, 215);" fill="currentColor">
+                        <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+                    </svg>
+                    Telefoon
                 </div>
-        </section>
-        <p id="copyright" class="poppins-regular"></p>    
-        <a href="#">
-            <div class="arrowup">
-                <div class="circle">
-                    <div class="arrow"></div>
+                <a class="infoitem poppins-bold" href="mailto:">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon" style="color: rgb(249, 234, 215);" fill="currentColor">
+                        <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7 .3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2 .4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/>
+                    </svg>
+                    info@{yournamehere}.be
+                </a>
+                <div class="infoitem poppins-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon" style="color: rgb(249, 234, 215);" fill="currentColor">
+                        <path d="M302.8 312C334.9 271.9 408 174.6 408 120C408 53.7 354.3 0 288 0S168 53.7 168 120c0 54.6 73.1 151.9 105.2 192c7.7 9.6 22 9.6 29.6 0zM416 503l144.9-58c9.1-3.6 15.1-12.5 15.1-22.3L576 152c0-17-17.1-28.6-32.9-22.3l-116 46.4c-.5 1.2-1 2.5-1.5 3.7c-2.9 6.8-6.1 13.7-9.6 20.6L416 503zM15.1 187.3C6 191 0 199.8 0 209.6L0 480.4c0 17 17.1 28.6 32.9 22.3L160 451.8l0-251.4c-3.5-6.9-6.7-13.8-9.6-20.6c-5.6-13.2-10.4-27.4-12.8-41.5l-122.6 49zM384 255c-20.5 31.3-42.3 59.6-56.2 77c-20.5 25.6-59.1 25.6-79.6 0c-13.9-17.4-35.7-45.7-56.2-77l0 194.4 192 54.9L384 255z"/>
+                    </svg>
+                    Steenweg 70, 3570 Alken
+                </div>
+                <div class="infoitem poppins-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon" style="color: rgb(249, 234, 215);" fill="currentColor">
+                        <path d="M240.1 4.2c9.8-5.6 21.9-5.6 31.8 0l171.8 98.1L448 104l0 .9 47.9 27.4c12.6 7.2 18.8 22 15.1 36s-16.4 23.8-30.9 23.8L32 192c-14.5 0-27.2-9.8-30.9-23.8s2.5-28.8 15.1-36L64 104.9l0-.9 4.4-1.6L240.1 4.2zM64 224l64 0 0 192 40 0 0-192 64 0 0 192 48 0 0-192 64 0 0 192 40 0 0-192 64 0 0 196.3c.6 .3 1.2 .7 1.8 1.1l48 32c11.7 7.8 17 22.4 12.9 35.9S494.1 512 480 512L32 512c-14.1 0-26.5-9.2-30.6-22.7s1.1-28.1 12.9-35.9l48-32c.6-.4 1.2-.7 1.8-1.1L64 224z"/>
+                    </svg>
+                    BE xxxx.xxx.xxx
                 </div>
             </div>
-        </a>    
-    </footer>
+            <div class="socials" >
+                <a class="social" >
+                    <svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="30" height="30" style="color: rgb(171, 179, 144);" fill="currentColor"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                </a>
+                <a class="social" >
+                    <svg id="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30" height="30" style="color: rgb(171, 179, 144);" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+                <a class="social"  href="https://www.linkedin.com/in/sem-radoes-873435196/">
+                    <svg id="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30" height="30" style="color: rgb(171, 179, 144);" fill="currentColor"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                </a>
+            </div>
+            <a class="clientenportaal">
+                Cliëntenportaal
+            </a>
+        </div>
+        <div class="bottomfooter">
+            <p id="copyright" class="poppins-regular"></p>    
+            <!-- <a href="#">
+                <div class="arrowup">
+                    <div class="circle">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </a>     -->
+        </div>
+</footer>
 </body>
 
 </html>

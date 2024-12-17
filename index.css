@@ -16,10 +16,7 @@
         flex-direction: column;
         background-color: rgb(136, 141, 116);
     }
-    #small-logo{
-        width: 70px;
-        height: auto;
-    }
+    
     .tekst{
         
         display: flex;

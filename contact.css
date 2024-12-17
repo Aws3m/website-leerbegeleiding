@@ -1,7 +1,6 @@
 .contactdescription{
     display: flex;
     justify-content: center;
-
 }
 
 .description{
@@ -27,6 +26,9 @@
     height: 25px;
 	width: 25px;
 }
+.contacttext{
+    padding-top: 5px;
+}
 .contactheader{
     margin-left: 10%;
     margin-right: 10%;
@@ -43,7 +45,7 @@
     padding: 2%;
     width: 100%;
 }
-form{
+/* form{
     border-radius: 2%;
     padding: 2%;
     width: 600px;
@@ -70,15 +72,24 @@ label{
 
 #textarea{
     min-height: 300px;
+} */
+#googlemaps{
+    width: 600px;
+    height: 450px;
 }
-
 @media only screen and (max-width: 770px) {
     .formulier{
         flex-direction: column;
+        align-content: center;
         gap: 50px;
         padding-bottom: 50px;
     }
-    
+    .contactinfo{
+        margin-left: 9%;
+    }
+    .contactdescription{
+        display: flex;
+    }
     form{
        
         width: 100%;
@@ -93,6 +104,10 @@ label{
         font-size: 1em;
         line-height: 30px;
     }
+    #googlemaps{
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 426px) {
+    
 }

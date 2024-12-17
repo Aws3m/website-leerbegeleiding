@@ -1,6 +1,6 @@
-header{
+#desktop{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     /* From https://css.glass */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -10,13 +10,34 @@ header{
     padding-bottom: 20px;
     padding-right: 10px;
 }
-nav{
+.dekstopmenu{
     display: flex;
     gap: 10px;
     height: fit-content;
     padding: 5px;
 }
+#mobile{
+    position: relative;
+    display: none;
+    justify-content: space-between;
+    /* From https://css.glass */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    align-items: center;
+    background-color: var(--darkest-eucalyptus);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#small-logo{
+    width: 70px;
+    height: auto;
+}
 
+.mobilemenuicons{
+    display: flex;
+}
 .navlink{
     cursor: pointer;
     padding: 5px;
@@ -32,27 +53,24 @@ nav{
 .navlink:hover{
     border-bottom-color: var(--red);
 }
-.cross{
-    display: none;
-}
-.hamburger{
-    display: none;
-}
+
 .hamitem{
     width: 100%;
     height: 5px;
     background-color: var(--beige);
     border-radius: 20px;
 }
-.hamburgerblock{
+
+.mobilemenu{
     display: none;
-}
-.hamburgermenu{
     position: absolute;
     left: 0;
-    top: 65px;
+    top: 110px;
     height: fit-content;
     width: 100%;
+}
+.hamburgermenu{
+    
     display: flex;
     flex-direction: column;
     background-color: var(--beige);
@@ -64,22 +82,41 @@ nav{
     color: var(--light-eucalyptus);
     padding: 20px;
 }
+#cross{
+    display: none;
+}
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    height: 100%;
+    width: 30px;
+}
 @media only screen and (max-width: 770px) {
-    nav{
+    #desktop{
         display: none;
-        
     }
-	.navlink{
-        font-size: 1.1em;
+    #mobile{
+        position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* From https://css.glass */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    align-items: center;
+    background-color: var(--darkest-eucalyptus);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
     }
 
-    .hamburger{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        height: 100%;
-        width: 30px;
+	.navlink{
+        font-size: 1.1em;
+        color: var(--darkest-eucalyptus);
     }
+
+    
 
 	
 }

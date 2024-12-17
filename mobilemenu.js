@@ -1,11 +1,11 @@
 
 const openMenu = (status) => {
-    $('.hamburgerblock').slideToggle('fast');
-    if(status === "open"){
-        $('#hamburger').css('display', 'none');
-        $('#cross').css('display', 'block');
+    $('.mobilemenu').slideToggle('fast');
+    if(status === "closed"){
+        $('#cross').css('display','none');
+        $('#hamburgerblock').css('display','block');
     } else {
-        $('#cross').css('display', 'none');
-        $('#hamburger').css('display', 'flex');
+        $('#hamburgerblock').css('display','none');
+        $('#cross').css('display','block');
     }
 }
